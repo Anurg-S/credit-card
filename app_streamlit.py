@@ -8,7 +8,7 @@ model = load(model_path)
 
 def predict(features):
     # Make predictions using the loaded model
-    prediction = model.predict_proba([features])
+    prediction = model.predict_proba([features]) # Use only predict instead of predict_proba to calculate normal prediction.
     return prediction
 
 def main():
